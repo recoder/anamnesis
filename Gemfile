@@ -46,6 +46,10 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+# Use Bootstrap
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
 
@@ -92,7 +96,8 @@ end
 #############################################################################
 # Deployment
 
-# gem 'dotenv-rails'
+# Allow to load environment variables from files
+gem 'dotenv-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

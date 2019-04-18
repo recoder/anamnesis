@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Anamnesis</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Anamnesis</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
+  <!-- styles for Stellar -->
+  <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/stellar-admin/jquery/css/style.css">
+  <link rel="shortcut icon" href="http://www.bootstrapdash.com/demo/stellar-admin/jquery/images/favicon.png" />
+
+  <!%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' --%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper">
     <%= yield %>
-  </body>
+    </div>
+  </div>
+
+  <script src="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="http://www.bootstrapdash.com/demo/stellar-admin/jquery/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+
+  <script src="http://www.bootstrapdash.com/demo/stellar-admin/jquery/js/off-canvas.js"></script>
+  <script src="http://www.bootstrapdash.com/demo/stellar-admin/jquery/js/hoverable-collapse.js"></script>
+  <script src="http://www.bootstrapdash.com/demo/stellar-admin/jquery/js/misc.js"></script>
+</body>
+
 </html>
